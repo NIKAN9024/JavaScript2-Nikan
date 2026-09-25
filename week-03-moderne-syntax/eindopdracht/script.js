@@ -25,7 +25,7 @@ form.addEventListener("submit", function (event) {
     </div>
   `;
 
-  form.reset(); //maak de invoer velden weer leeg
+  form.reset(); //reset de invoer velden weer leeg
 });
 
 // Stap 3 (bonus): Voeg een verwijderknop toe aan elke kaart
