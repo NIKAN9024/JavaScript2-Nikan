@@ -8,8 +8,9 @@
 //  1. Arrow function
 //  Herschrijf naar een arrow function
 // ------------------------------------------------------------
-let breedte = 5;
-let hoogte = 3;
+const breedte = 5;
+const hoogte = 3;
+
 const calculateArea = (breedte, hoogte) => {
   return breedte * hoogte;
 };
@@ -24,7 +25,7 @@ document.getElementById("result-area").textContent =
 // ------------------------------------------------------------
 
 const makeSentence = (naam, stad) => {
-  return "Hallo, ik ben " + naam + " en ik woon in " + stad;
+  return `Hallo, ik ben  ${naam}   en ik woon in ${stad} `;
 };
 
 // Toon het resultaat in de DOM — dit hoef je niet aan te passen:
@@ -41,11 +42,11 @@ document.getElementById("result-sentence").textContent = makeSentence(
 
 const brands = ["Nike", "Adidas", "Dior", "New Balance"];
 
-function showBrands(brands) {
-  for (let i = 0; i < brands.length; i++) {
-    console.log(brands[i]);
+const showBrands = (brands) => {
+  for (const brand of brands) {
+    console.log(brand);
   }
-}
+};
 
 // Toon de merken als <li> elementen in de lijst:
 // Dit hoef je niet aan te passen — maar showBrands moet
@@ -53,9 +54,9 @@ function showBrands(brands) {
 showBrands(brands);
 
 // Extra: toon ook in de DOM
-const brandsList = document.getElementById("brands-list");
-for (let i = 0; i < brands.length; i++) {
-  brandsList.innerHTML += "<li>" + brands[i] + "</li>";
+const brandsList = document.getElementById("#brands-list");
+for (const brand of brands) {
+  brandsList.innerHTML += `<li>${brand}</li>`;
 }
 
 // ------------------------------------------------------------
@@ -66,12 +67,15 @@ for (let i = 0; i < brands.length; i++) {
 // ------------------------------------------------------------
 
 // Stap A: vervang getElementById door querySelector
-const button = document.querySelectorAll("my-button");
-const title = document.querySelectorAll("page-title");
+const button = document.querySelector("my-button");
+const title = document.querySelector("page-title");
+
+let aantalKlikken = 0;
 
 // Stap B: voeg een event listener toe aan de knop
 // Bij klik verandert de tekst van de h1 naar iets anders
 // Gebruik een arrow function en een template literal
-button.addEventListener("click", function () {
-  title.textContent = "De knop is geklikt!";
+button.addEventListener("click", () => {
+  aantalKlikken++;
+  title.textContent = `De knop is ${aantalKlikken} keer geklikt!`;
 });
