@@ -1,0 +1,15 @@
+body {
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    color: black;
+}
+
+.active {
+    color: aqua;
+    height: 150;
+}
+
