@@ -134,3 +134,4 @@ userForm.addEventListener("submit", (event) => {
 // Voeg toe aan de array en roep filterUsers() aan
 
 filterUsers();
+console.log("");

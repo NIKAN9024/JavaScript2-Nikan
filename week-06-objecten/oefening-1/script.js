@@ -1,6 +1,6 @@
 const car = {
-  name: 'Golf',
-  brand: 'Volkswagen',
+  name: "Golf",
+  brand: "Volkswagen",
   year: 2008,
   mileage: 145000,
   description() {

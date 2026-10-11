@@ -42,3 +42,4 @@ aangepasteLijst.forEach((persoon) => {
 
 console.log("orginele personen:", people);
 console.log("aangepaste personen:", nieuwePeople);
+console.log("");
