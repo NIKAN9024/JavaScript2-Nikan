@@ -1,6 +1,20 @@
-fetch('./books.json')
-  .then(response => response.json())
-  .then(books => {
-    // Toon elk boek als een <li> in #books-list
+fetch("./books.json")
+  .then((response) => {
+    return response.json();
   })
-  .catch(error => console.error('Fout:', error));
+  .then((books) => {
+    const list = document.querySelector("#books-list");
+    books.forEach((book) => {
+      const li = document.createElement("li");
+      const { title, author, year } = book;
+
+      li.textContent = `${title} — ${author} (${year})`;
+      list.appendChild(li);
+    });
+
+    console.log("Boeken geladen:", books);
+  })
+
+  .catch((error) => {
+    console.error("Fout:", error);
+  });

@@ -1,1 +1,34 @@
-[]
+[
+
+    {
+        "title": "Inception",
+        "director": "Christopher Nolan",
+        "year": 2010,
+        "genre": "Sciencefiction"
+    },
+
+    {
+        "title": "Rush Hour",
+        "director": "Brett Ratner",
+        "year": 1998,
+        "genre": "Comedy"
+    },
+    
+
+   {
+        "title": "Rush Hour 2",
+        "director": "Brett Ratner",
+        "year": 2001,
+        "genre": "Comedy"
+    },
+    
+
+    {
+        "title": "Rush Hour 3",
+        "director": "Brett Ratner",
+        "year": 2007,
+        "genre": "Comedy"
+    }
+    
+    
+]

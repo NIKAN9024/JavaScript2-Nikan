@@ -41,4 +41,8 @@ aangepasteLijst.forEach((persoon) => {
 });
 
 console.log("orginele personen:", people);
+<<<<<<< HEAD
 console.log("aangepaste personen:", nieuwePeople);
+=======
+console.log("aangepaste personen:", nieuwePeople);
+>>>>>>> week7

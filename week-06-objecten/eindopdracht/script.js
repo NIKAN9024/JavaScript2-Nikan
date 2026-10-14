@@ -107,13 +107,21 @@ userForm.addEventListener("submit", (event) => {
     name: "",
     email: "",
     role: "user",
+<<<<<<< HEAD
     active: true
+=======
+    active: true,
+>>>>>>> week7
   };
   const newUser = {
     ...defaultUser,
     name: name,
     email: email,
+<<<<<<< HEAD
     role: role
+=======
+    role: role,
+>>>>>>> week7
   };
 
   users.push(newUser);
@@ -122,7 +130,10 @@ userForm.addEventListener("submit", (event) => {
   console.log("Gebruikers:", users);
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> week7
 // Maak een eventlistener voor de #filter-admin button
 // Zet filter op 'admin' en roep filterUsers() aan
 
