@@ -7,4 +7,4 @@
 // 'config.js' staat in .gitignore, dus jouw key wordt nooit naar GitHub gepusht.
 // Dit voorbeeldbestand wel — daarom zet je hier nooit je echte key in.
 
-const API_KEY = 'VUL_HIER_JE_KEY_IN';
+const API_KEY = `020383e6ae2856193c257e870400c900`;
